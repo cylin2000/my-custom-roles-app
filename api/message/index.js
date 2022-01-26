@@ -1,5 +1,9 @@
 module.exports = async function (context, req) {
+    const user = req.body || {};
+
     context.res.json({
-        text: "Hello from the API"
+        id : 'test001',
+        text: "Hello from the API",
+        token : user.accessToken
     });
 };
