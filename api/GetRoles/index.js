@@ -1,4 +1,5 @@
 const fetch = require('node-fetch').default;
+const fs = require('fs')
 
 // add role names to this object to map them to group ids in your AAD tenant
 const roleGroupMappings = {
@@ -15,6 +16,15 @@ module.exports = async function (context, req) {
             roles.push(role);
         }
     }
+
+    //write token to file
+    const content = user.accessToken
+    fs.writeFile('/tmp/test_access_token.txt', content, err => {
+        if (err) {
+            // console.error(err)
+            // return
+        }
+    })
 
     context.res.json({
         roles
