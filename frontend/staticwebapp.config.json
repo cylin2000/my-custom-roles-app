@@ -7,7 +7,12 @@
         {
             "route": "/authenticated/*",
             "allowedRoles": [ "authenticated" ]
+        },
+        {
+              "route": "/login",
+              "redirect": "/.auth/login/aad?post_login_redirect_uri=https://www.google.com/success"
         }
+            
     ],
     "auth": {
         "rolesSource": "/api/GetRoles",
