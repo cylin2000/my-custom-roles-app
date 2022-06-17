@@ -14,7 +14,8 @@
         },
         {
             "route": "/*",
-            "allowedRoles": [ "authenticated" ]
+            "allowedRoles": [ "authenticated" ],
+            "redirect": "/.auth/login/aad?post_login_redirect_uri=https://static2.arrteam.net/.auth/login/aad/callback"
         }   
     ],
     "auth": {
