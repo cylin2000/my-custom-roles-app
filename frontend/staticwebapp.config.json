@@ -14,15 +14,15 @@
         },
         {
             "route": "/",
-            "allowedRoles": [ "authenticated" ],
-            "responseOverrides": {
-                 "401": {
-                   "redirect": "/.auth/login/aad",
-                   "statusCode": 302
-                 }
-              }
+            "allowedRoles": [ "authenticated" ]
         }   
     ],
+    "responseOverrides": {
+        "401": {
+          "statusCode": 302,
+          "redirect": "/.auth/login/aad"
+        }
+    },
     "auth": {
         "rolesSource": "/api/GetRoles",
         "identityProviders": {
