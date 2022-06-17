@@ -10,12 +10,11 @@
         },
         {
               "route": "/login",
-              "redirect": "/.auth/login/aad?post_login_redirect_uri=https://www.google.com/success"
+              "redirect": "/.auth/login/aad?post_login_redirect_uri=https://static2.arrteam.net/.auth/login/aad/callback"
         },
         {
             "route": "/*",
-            "allowedRoles": [ "authenticated" ],
-            "redirect": "/.auth/login/aad?post_login_redirect_uri=https://static2.arrteam.net/.auth/login/aad/callback"
+            "allowedRoles": [ "authenticated" ]
         }   
     ],
     "auth": {
