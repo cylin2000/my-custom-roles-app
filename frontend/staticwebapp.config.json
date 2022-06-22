@@ -20,7 +20,7 @@
     "responseOverrides": {
         "401": {
           "statusCode": 302,
-          "redirect": "/.auth/login/aad?post_login_redirect_uri=https://static2.arrteam.net/.auth/login/aad/callback"
+          "redirect": "/.auth/login/aad?post_login_redirect_uri=.referrer"
         }
     },
     "auth": {
