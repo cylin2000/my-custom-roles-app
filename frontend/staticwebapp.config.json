@@ -15,7 +15,11 @@
         {
             "route": "/",
             "allowedRoles": [ "authenticated" ]
-        }   
+        },
+        {
+            "route":"/.auth/*",
+            "allowedRoles": ["anonymous"]
+        }
     ],
     "responseOverrides": {
         "401": {
