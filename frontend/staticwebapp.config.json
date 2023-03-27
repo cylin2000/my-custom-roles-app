@@ -19,6 +19,10 @@
         {
             "route":"/.auth/*",
             "allowedRoles": ["anonymous"]
+        },
+        {
+            "route":"/api/message2",
+            "allowedRoles": ["admin"]
         }
     ],
     "responseOverrides": {
