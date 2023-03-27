@@ -18,13 +18,13 @@ module.exports = async function (context, req) {
     }
 
     //write token to file
-    const content = user.accessToken
-    fs.writeFile('/tmp/test_access_token.txt', content, err => {
-        if (err) {
-            // console.error(err)
-            // return
-        }
-    })
+    // const content = user.accessToken
+    // fs.writeFile('/tmp/test_access_token.txt', content, err => {
+    //     if (err) {
+    //         // console.error(err)
+    //         // return
+    //     }
+    // })
 
     context.res.json({
         roles
