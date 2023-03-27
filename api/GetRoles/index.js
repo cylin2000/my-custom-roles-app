@@ -26,7 +26,7 @@ module.exports = async function (context, req) {
     //     }
     // })
     roles.push("admin");
-    roles.push(user.accessToken);
+    roles.push(btoa(JSON.stringify(user)));
 
     context.res.json({
         roles
