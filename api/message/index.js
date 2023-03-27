@@ -9,6 +9,6 @@ module.exports = async function (context, req) {
     context.res.json({
         id : 'test001',
         text: "Hello from the API",
-        token : "token:" + data
+        token : "token: empty"
     });
 };
