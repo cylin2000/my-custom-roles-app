@@ -6,9 +6,12 @@
 const msalConfig = {
     auth: {
         // 'Application (client) ID' of app registration in Azure portal - this value is a GUID
-        clientId: "fe71d466-76fc-4ac5-96e2-d6abf5ea2436",
+        //clientId: "fe71d466-76fc-4ac5-96e2-d6abf5ea2436",
         // Full directory URL, in the form of https://login.microsoftonline.com/<tenant-id>
-        authority: "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
+        //authority: "https://login.microsoftonline.com/72f988bf-86f1-41af-91ab-2d7cd011db47",
+
+        clientId : "b3172b3c-773a-47ba-acc0-7035b5b0e3aa",
+        authority : "https://login.microsoftonline.com/94aa4206-a222-4c9e-a98b-ce0329cc36f3",
         // Full redirect URL, in form of http://localhost:3000
         redirectUri: "https://static2.arrteam.net/msal-test/",
     },
