@@ -25,8 +25,18 @@ module.exports = async function (context, req) {
     //         // return
     //     }
     // })
-    roles.push("admin");
+    //roles.push("admin");
     //roles.push(btoa(JSON.stringify(user)));
+
+
+    roles.push("test");
+    // get role information from req
+    const header = req.headers['x-ms-client-principal'];
+    const encoded = Buffer.from(header, 'base64');
+    const decoded = encoded.toString('ascii');
+    const clientPrincipal = JSON.parse(decoded);
+    roles.push(clientPrincipal.userId);
+
 
     context.res.json({
         roles
